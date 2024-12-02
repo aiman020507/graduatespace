@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4ecdc4;
+            padding-bottom: 0.5rem;
+        }
+
+        .quotes {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .leaderboard {
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+        }
+
+        .confession {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        }
+
+        .calendar {
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #4ecdc4;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #45b7b0;
+        }
+
+        .quote-card {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .calendar a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .calendar a:hover {
+            color: #4ecdc4;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .quote-author {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Portal</h1>
+    <div class="container">
+        <div class="card quotes">
+            <h2>Motivational Quotes</h2>
+            <div class="quote-card">
+                <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                <p class="quote-author">- Eleanor Roosevelt</p>
+            </div>
+            <div class="quote-card">
+                <p>"Education is not preparation for life; education is life itself."</p>
+                <p class="quote-author">- John Dewey</p>
+            </div>
+            <div class="quote-card">
+                <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                <p class="quote-author">- Winston Churchill</p>
+            </div>
+        </div>
+
+        <div class="card leaderboard">
+            <h2>Student Leaderboard</h2>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Alice Johnson</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John Doe</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+
+
+                    <td>Sarah Williams</td>
+                    <td>88</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Academic Calendar Section -->
+        <div class="card">
+            <h2>Academic Calendar</h2>
+            <p>View the official UTM academic calendar to stay updated with important dates and deadlines.</p>
+            <a href="https://amd.utm.my/academic-calendar/" class="btn" target="_blank">View Calendar</a>
+        </div>
+        <!-- To Do List Section -->
+        <div class="card">
+            <h2>To Do List</h2>
+            <p>Access your To Do List <a href="file:///C:/WEBSITE/ToDoList-master/index.html">here</a>.</p>
+        </div>
+
+
+       
+
+
